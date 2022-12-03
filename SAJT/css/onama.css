@@ -1,0 +1,72 @@
+.container{
+    display: grid;
+    grid-template-rows: 1fr 0.1fr;
+    height: 100vh;
+}
+
+.oNama{
+    color: black;
+    text-align: center;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+}
+
+.oNamaTekst{
+color: rgb(0, 0, 0);
+font-size: 1.5rem;
+padding: 1rem;
+height: auto;
+}
+
+.slikaDiv{
+    background-image: url(/slike/q.jpg);
+    background-size: cover;
+    height: 90%;
+    padding: 1rem;
+    margin: 1rem;
+}
+.pisaniFont{
+    font-family: 'Caveat', cursive;
+    font-size: 4rem;
+}
+
+@media (max-width:1000px){
+    .oNamaTekst{
+        font-size: 1.6rem;
+    }
+    .oNama{
+        grid-template-columns: none;
+        grid-template-rows: 700px 1fr;
+    }
+}
+@media (max-width:650px){
+    .oNama{
+        grid-template-columns: none;
+        grid-template-rows: 400px 1fr;
+    }
+    .slikaDiv{
+        background-size: 100%;
+        background-repeat: no-repeat;
+        max-height: 700px;
+    }
+    .oNamaTekst{
+        font-size: 1rem;
+    }
+    .pisaniFont{
+        font-family: 'Caveat', cursive;
+        font-size: 2rem;
+    }
+    .slikaDiv{
+        margin: 0;
+    }
+}
+
+@media (max-width:410px){
+.oNamaTekst{
+    position: relative;
+    top: -90px;
+}
+
+}
